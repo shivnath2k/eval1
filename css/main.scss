@@ -1,0 +1,74 @@
+header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 107, 165);
+    h1{
+        padding-top: 0.5em;
+    }
+    img{
+        max-width: 8em;
+    }
+    ul{
+        list-style-type: none;
+        justify-content: space-between;
+        li{
+            float: left;
+            display: block;
+            padding: 1.5em 1em;
+            a{
+                color: white;
+                font-size: large;
+                &:hover{
+                    background: rgb(47, 114, 158);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.hero-img{
+    position: absolute;
+    background: url(../images/plane.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 45%;
+    background-position-y: 45%;
+    height: 40vh;
+    z-index: -1;
+
+}
+
+.flights{
+    justify-content: center;
+    
+    position: absolute;
+    padding-top: 25em;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.mb-3{
+    margin: 1em;
+}
+
+.contents{
+    padding-top: 65em;
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-bottom: 2em;
+    
+}
+.nav-content{
+    padding: 1em;
+    &:hover{
+        background-color: rgb(19, 107, 165);
+        border-radius: 25px;
+        color: white;
+        h2{
+            color: whitesmoke;
+        }
+    }
+}

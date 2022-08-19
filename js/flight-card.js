@@ -1,54 +1,50 @@
 let flight_details = fetch("/js/flights.json");
 flight_details.then(response => response.json()).then(data=>{ 
             
-    /**for(let i = 0; i < data.length; i++) {
-        let obj = data[i];
-        const today=new Date(obj.departTime)
-        console.log(today.toUTCString());
-    }**/
+    
 
 
     for(let i = 0; i < data.length; i++) {
         let obj = data[i];
-    var box = document.createElement("div");
-    box.className="card border-dark mb-3";
-    box.style.width="30rem";
-    var flno =document.createElement("div");
-    flno.className="card-header";
-    var flnoh3=document.createElement("h3");
-    flnoh3.innerHTML=obj.flightNum+" "+obj.origin+" -> "+obj.destination;
+        var box = document.createElement("div");
+        box.className="card border-dark mb-3";
+        box.style.width="30rem";
+        var flno =document.createElement("div");
+        flno.className="card-header";
+        var flnoh3=document.createElement("h3");
+        flnoh3.innerHTML=obj.flightNum+" . . "+obj.origin+" -> "+obj.destination;
 
-    var detail=document.createElement("div");
-    detail.className="card-body text-dark"
-    var depttime=document.createElement("h5");
-    depttime.className="card-title";
-    const dtime=new Date(obj.departTime);
-    depttime.innerHTML="Deaparture Time: "+dtime.toUTCString();
-    var arrivetime=document.createElement("h5");
-    arrivetime.className="card-title";
-    const atime=new Date(obj.ArrivalTime);
-    arrivetime.innerHTML="Arrival Time: "+atime.toUTCString();
-    
-    var price=document.createElement("h5");
-    price.className="card-title"
-    price.innerHTML="Price: "+obj.price;
+        var detail=document.createElement("div");
+        detail.className="card-body text-dark"
+        var depttime=document.createElement("h5");
+        depttime.className="card-title";
+        const dtime=new Date(obj.departTime);
+        depttime.innerHTML="Deaparture Time: "+dtime.toUTCString();
+        var arrivetime=document.createElement("h5");
+        arrivetime.className="card-title";
+        const atime=new Date(obj.ArrivalTime);
+        arrivetime.innerHTML="Arrival Time: "+atime.toUTCString();
+        
+        var price=document.createElement("h5");
+        price.className="card-title"
+        price.innerHTML="Price: "+"₹"+obj.price;
 
-    var proceed=document.createElement("a");
-    proceed.className="btn btn-primary";
-    proceed.innerHTML="Proceed";
-    proceed.style.color="white";
-    
-    
-    box.appendChild(flno);
-    flno.appendChild(flnoh3);
-    box.appendChild(detail);
-    detail.appendChild(depttime);
-    detail.appendChild(arrivetime);
-    detail.appendChild(price);
-    detail.appendChild(proceed);
+        var proceed=document.createElement("a");
+        proceed.className="btn btn-primary";
+        proceed.innerHTML="Proceed To Book";
+        proceed.style.color="white";
+        
+        
+        box.appendChild(flno);
+        flno.appendChild(flnoh3);
+        box.appendChild(detail);
+        detail.appendChild(depttime);
+        detail.appendChild(arrivetime);
+        detail.appendChild(price);
+        detail.appendChild(proceed);
 
-    document.getElementById("flight-cards").appendChild(box);
-    //document.getElementById("flight-cards").style.flex-direction="row";
+        document.getElementById("flight-cards").appendChild(box);
+        //document.getElementById("flight-cards").style.flex-direction="row";
 
     }
 
