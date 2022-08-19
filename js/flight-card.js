@@ -33,6 +33,8 @@ flight_details.then(response => response.json()).then(data=>{
         proceed.className="btn btn-primary";
         proceed.innerHTML="Proceed To Book";
         proceed.style.color="white";
+        proceed.setAttribute('id',obj.flightNum);
+        proceed.setAttribute('onClick','openpage(this.id)');
         
         
         box.appendChild(flno);
@@ -49,3 +51,11 @@ flight_details.then(response => response.json()).then(data=>{
     }
 
 });
+
+
+function openpage(id)
+{
+    var flnum = id;
+    sessionStorage.setItem("flnum", flnum);
+    window.location.href = "/../html/booking.html";
+}
