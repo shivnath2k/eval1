@@ -1,0 +1,61 @@
+header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 107, 165);
+    h1{
+        padding-top: 0.5em;
+    }
+    img{
+        max-width: 8em;
+    }
+}
+*:focus {outline:none !important}
+body{
+    background-image: url(/images/plane2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 20%;
+    
+}
+
+form{
+    margin-left: 10%;
+    margin-top: 8%;
+    border: 10px ridge rgba(124, 102, 102, 0.8);
+    border-radius: 3%;
+    padding: 1em 2em;
+    max-width: 600px;
+    background-color: rgb(170, 158, 158,0.8);
+    label{
+        
+        font-size:xx-large;
+        
+    }
+    input{
+        font-size: large;
+        width: 100%;
+        &:focus{
+            border-width: 3px;
+        }
+    }
+    input[type=radio]{
+        width: auto;
+        &:focus{
+            border-width: 5px;
+        }
+    }
+    
+    
+}
+.option{
+    font-size: x-large;
+    padding: 0em;
+    
+    
+}
+small{
+    color: red;
+    font-size: medium;
+}

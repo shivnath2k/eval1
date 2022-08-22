@@ -1,0 +1,60 @@
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(19, 107, 165);
+}
+header h1 {
+  padding-top: 0.5em;
+}
+header img {
+  max-width: 8em;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  background-image: url(/images/plane2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  background-position-y: 20%;
+}
+
+form {
+  margin-left: 10%;
+  margin-top: 8%;
+  border: 10px ridge rgba(124, 102, 102, 0.8);
+  border-radius: 3%;
+  padding: 1em 2em;
+  max-width: 600px;
+  background-color: rgba(170, 158, 158, 0.8);
+}
+form label {
+  font-size: xx-large;
+}
+form input {
+  font-size: large;
+  width: 100%;
+}
+form input:focus {
+  border-width: 3px;
+}
+form input[type=radio] {
+  width: auto;
+}
+form input[type=radio]:focus {
+  border-width: 5px;
+}
+
+.option {
+  font-size: x-large;
+  padding: 0em;
+}
+
+small {
+  color: red;
+  font-size: medium;
+}/*# sourceMappingURL=booking.css.map */
