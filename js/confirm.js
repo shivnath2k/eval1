@@ -9,7 +9,6 @@ function addPassengerDetail()
     document.getElementById("phone").innerHTML=urlParams.get('phone');
 }
 
-var flight;
 var itm=sessionStorage.getItem("flnum");
 let flight_details = fetch("/js/flights.json");
 flight_details.then(response => response.json()).then(data=>{ 
