@@ -1,28 +1,3 @@
-// var elem;
-// var firstname;
-// var lastname;
-
-// function loading()
-// {
-//     firstname=document.getElementById("first_name");
-//     lastname=document.getElementById("first_name");
-
-//     elem=document.getElementById("first_name");
-//     elem.addEventListener('input',fname);
-// }
-
-
-// function fname()
-// {
-//     console.log("Listener is running");
-//     var x=elem.value;
-//     if(x.length>2)
-//     {    elem.style.borderColor="red";
-//         console.log("Color changed to red");
-//         elem.style.borderSize="2em";
-//     }
-// }
-
 var name_regex = /^[a-z A-Z]+$/;
 var email_regex = /\S+@\S+\.com/;
 const items={
@@ -33,6 +8,7 @@ function invalid(elm)
 {
     elm.style.borderColor="red";
     items[elm.id]=0;
+    document.getElementById("submit").setAttribute("disabled","true");
 }
 function valid(elm)
 {
@@ -45,10 +21,8 @@ function enablebutton()
 {
     for (const item in items)
     {
-        
-        if(item===0)
+        if(items[item]===0)
         {
-            console.log("test")
             return;
         }
     }
@@ -119,7 +93,7 @@ function v_age(elm)
     if(elm.value.length==0)
     {
         invalid(elm);
-        innerHTML="Age cannot be empty";
+        msg.innerHTML="Age cannot be empty";
         return;
     }
     if(elm.value<18)

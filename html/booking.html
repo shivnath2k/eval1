@@ -14,15 +14,15 @@
             <a > </a>
         </header>
         <div class="form">
-        <form id="myform" action="#">
+        <form id="myform" action="/html/confirm.html" method="get">
             <label>First Name: </label> <br>
-            <input type="text" id="first_name" onkeyup="v_firstname(this)">
+            <input type="text" name="first_name" id="first_name" onkeyup="v_firstname(this)">
             <small id="s_first_name"></small><br>
             <label>Last Name: </label><br>
-            <input type="text" id="last_name" onkeyup="v_lastname(this)"><br>
+            <input type="text" name="last_name" id="last_name" onkeyup="v_lastname(this)"><br>
             <small id="s_last_name"></small><br>
             <label>Age: </label><br>
-            <input type="number" id="age" onkeyup="v_age(this)"><br>
+            <input type="number" name="age" id="age" onkeyup="v_age(this)"><br>
             <small id="s_age"></small><br>
             <label>Gender: </label><br>
             <input type="radio" name="gender" value="Male" checked>
@@ -33,12 +33,12 @@
             <label class="option">Other</label><br>
             <small id="s_gender"></small><br>
             <label>Email: </label><br>
-            <input type="email" id="email" onkeyup="v_email(this)"><br>
+            <input type="email" name="email" id="email" onkeyup="v_email(this)"><br>
             <small id="s_email"></small><br>
             <label>Phone Number: </label><br>
-            <input type="tel" id="phone" onkeyup="v_phone(this)"><br>
+            <input type="tel" name="phone" id="phone" onkeyup="v_phone(this)"><br>
             <small id="s_phone"></small><br>
-            <input id="submit" type="submit" value="Book Ticket" disabled>
+            <input id="submit" name="submit" type="submit" value="Book Ticket" disabled>
         </form>
         </div>
     </body>
