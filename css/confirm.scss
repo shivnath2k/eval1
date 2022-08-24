@@ -4,7 +4,7 @@ header{
     justify-content: space-between;
     background-color: rgb(19, 107, 165);
     h1{
-        padding-top: 0.5em;
+        padding-top: 0.3em;
     }
     img{
         max-width: 8em;
@@ -13,6 +13,7 @@ header{
 
 body{
     background-image: url(/images/plane2.webp);
+    background-size: cover;
 }
 
 div{
@@ -53,13 +54,18 @@ div{
 
 .col{
     width: 70%;
+    font-variant: small-caps;
+    font-weight: lighter;
 }
 
 .col1{
+    font-weight: bold;
+    font-variant: small-caps;
     width: 25%;
 }
 
 h2{
+    font-weight: bolder;
     padding-left: 1em;
 }
 
@@ -67,4 +73,14 @@ input[type="button"]{
     width: 20%;
     font-size: x-large;
     margin: auto;
+}
+
+#passenger2{
+    display: none;
+}
+
+.passengers{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -7,6 +7,21 @@ function addPassengerDetail()
     document.getElementById("gender").innerHTML=urlParams.get('gender');
     document.getElementById("email").innerHTML=urlParams.get('email');
     document.getElementById("phone").innerHTML=urlParams.get('phone');
+    if(urlParams.get("submit2")!==null)
+    {
+        add2ndPassengerDetails();
+    }
+}
+
+function add2ndPassengerDetails()
+{
+    document.getElementById("passenger2").style.display="block";
+    document.getElementById("first_name2").innerHTML=urlParams.get('first_name2');
+    document.getElementById("last_name2").innerHTML=urlParams.get('last_name2');
+    document.getElementById("age2").innerHTML=urlParams.get('age2');
+    document.getElementById("gender2").innerHTML=urlParams.get('gender2');
+    document.getElementById("email2").innerHTML=urlParams.get('email2');
+    document.getElementById("phone2").innerHTML=urlParams.get('phone2');
 }
 
 var itm=sessionStorage.getItem("flnum");

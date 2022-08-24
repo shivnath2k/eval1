@@ -1,4 +1,7 @@
 header{
+    position: sticky;
+    top: 0%;
+    z-index: 9999999;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -63,13 +66,20 @@ header{
     
 }
 .nav-content{
+    margin-bottom: 1em;
     padding: 1em;
-    &:hover{
-        background-color: rgb(19, 107, 165);
+    background-color: rgb(19, 107, 165);
         border-radius: 25px;
         color: white;
         h2{
             color: whitesmoke;
+        }
+    &:hover{
+        background-color: rgb(19, 107, 165);
+        border-radius: 25px;
+        
+        h2{
+            color: black;
         }
     }
 }

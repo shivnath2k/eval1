@@ -1,4 +1,8 @@
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 9999999;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -59,13 +63,19 @@ header ul li a:hover {
 }
 
 .nav-content {
+  margin-bottom: 1em;
   padding: 1em;
-}
-.nav-content:hover {
   background-color: rgb(19, 107, 165);
   border-radius: 25px;
   color: white;
 }
-.nav-content:hover h2 {
+.nav-content h2 {
   color: whitesmoke;
+}
+.nav-content:hover {
+  background-color: rgb(19, 107, 165);
+  border-radius: 25px;
+}
+.nav-content:hover h2 {
+  color: black;
 }/*# sourceMappingURL=main.css.map */

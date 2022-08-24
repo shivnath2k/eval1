@@ -23,29 +23,29 @@ body {
   background-position-y: 20%;
 }
 
-form {
+.form {
   margin-left: 10%;
   margin-top: 8%;
-  border: 10px ridge rgba(124, 102, 102, 0.8);
+  border: 10px ridge rgba(204, 191, 191, 0.8);
   border-radius: 3%;
   padding: 1em 2em;
-  max-width: 600px;
-  background-color: rgba(170, 158, 158, 0.8);
+  width: 600px;
+  background-color: rgba(204, 191, 191, 0.8);
 }
-form label {
+.form label {
   font-size: xx-large;
 }
-form input {
+.form input {
   font-size: large;
   width: 100%;
 }
-form input:focus {
+.form input:focus {
   border-width: 3px;
 }
-form input[type=radio] {
+.form input[type=radio] {
   width: auto;
 }
-form input[type=radio]:focus {
+.form input[type=radio]:focus {
   border-width: 5px;
 }
 
@@ -57,4 +57,23 @@ form input[type=radio]:focus {
 small {
   color: red;
   font-size: medium;
+}
+
+.content {
+  padding-left: 1.5em;
+}
+
+#myform2 {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: large;
 }/*# sourceMappingURL=booking.css.map */

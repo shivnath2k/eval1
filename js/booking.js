@@ -1,14 +1,18 @@
 var name_regex = /^[a-z A-Z]+$/;
 var email_regex = /\S+@\S+\.com/;
+var num_of_passenger=1;
+
 const items={
-    'first_name': 0, 'last_name':0, 'age':0, 'email':0, 'phone':0
+    'first_name': 0, 'last_name':0, 'age':0, 'email':0, 'phone':0,
+    'first_name2': 0, 'last_name2':0, 'age2':0, 'email2':0, 'phone2':0
 }
 
 function invalid(elm)
 {
     elm.style.borderColor="red";
+    var buttonid="submit"+num_of_passenger;
     items[elm.id]=0;
-    document.getElementById("submit").setAttribute("disabled","true");
+    document.getElementById(buttonid).setAttribute("disabled","true");
 }
 function valid(elm)
 {
@@ -18,21 +22,29 @@ function valid(elm)
 }
 
 function enablebutton()
-{
+{   var count=0;
+    var buttonid="submit"+num_of_passenger;
     for (const item in items)
     {
         if(items[item]===0)
         {
             return;
         }
+        count=count+1;
+        if(num_of_passenger==1 && count==5)
+        {
+            break;
+        }
     }
-    document.getElementById("submit").removeAttribute("disabled");
+    
+    document.getElementById(buttonid).removeAttribute("disabled");
+
 }
 
-function v_firstname(elm)
+function v_firstname(elm,passengernum)
 {
-    
-    var msg=document.getElementById("s_first_name");
+    var passenger="s_first_name"+passengernum;
+    var msg=document.getElementById(passenger);
     if(elm.value.length==0)
     {
         invalid(elm);
@@ -58,10 +70,10 @@ function v_firstname(elm)
 }
 
 
-function v_lastname(elm)
+function v_lastname(elm,passengernum)
 {
-    
-    var msg=document.getElementById("s_last_name");
+    var passenger="s_last_name"+passengernum;
+    var msg=document.getElementById(passenger);
     if(elm.value.length==0)
     {
         invalid(elm);
@@ -87,9 +99,10 @@ function v_lastname(elm)
 }
 
 
-function v_age(elm)
+function v_age(elm,passengernum)
 {
-    var msg=document.getElementById("s_age");
+    var passenger="s_age"+passengernum;
+    var msg=document.getElementById(passenger);
     if(elm.value.length==0)
     {
         invalid(elm);
@@ -114,9 +127,10 @@ function v_age(elm)
 }
 
 
-function v_email(elm)
+function v_email(elm,passengernum)
 {
-    var msg=document.getElementById("s_email");
+    var passenger="s_email"+passengernum;
+    var msg=document.getElementById(passenger);
     if(elm.value.length==0)
     {
         invalid(elm);
@@ -136,9 +150,10 @@ function v_email(elm)
 }
 
 
-function v_phone(elm)
+function v_phone(elm,passengernum)
 {
-    var msg=document.getElementById("s_phone");
+    var passenger="s_phone"+passengernum;
+    var msg=document.getElementById(passenger);
     var phone_regex = /^[0-9]+$/;
     if(elm.value.length==0)
     {
@@ -162,5 +177,14 @@ function v_phone(elm)
         invalid(elm);
         msg.innerHTML="Phone number can only be numbers";
     }
+    
+}
+
+function addPassenger(elm)
+{
+    num_of_passenger=2;
+    document.getElementById("myform2").style.display="block";
+    document.getElementById("submit1").style.display="none";
+    elm.style.display="none";
     
 }

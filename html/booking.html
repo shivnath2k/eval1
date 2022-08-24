@@ -13,33 +13,69 @@
             <h1>Let's GO Airlines</h1>
             <a > </a>
         </header>
-        <div class="form">
-        <form id="myform" action="/html/confirm.html" method="get">
-            <label>First Name: </label> <br>
-            <input type="text" name="first_name" id="first_name" onkeyup="v_firstname(this)">
-            <small id="s_first_name"></small><br>
-            <label>Last Name: </label><br>
-            <input type="text" name="last_name" id="last_name" onkeyup="v_lastname(this)"><br>
-            <small id="s_last_name"></small><br>
-            <label>Age: </label><br>
-            <input type="number" name="age" id="age" onkeyup="v_age(this)"><br>
-            <small id="s_age"></small><br>
-            <label>Gender: </label><br>
-            <input type="radio" name="gender" value="Male" checked>
-            <label class="option">Male </label>
-            <input type="radio" name="gender" value="Female">
-            <label class="option">Female</label>
-            <input type="radio" name="gender" value="Other">
-            <label class="option">Other</label><br>
-            <small id="s_gender"></small><br>
-            <label>Email: </label><br>
-            <input type="email" name="email" id="email" onkeyup="v_email(this)"><br>
-            <small id="s_email"></small><br>
-            <label>Phone Number: </label><br>
-            <input type="tel" name="phone" id="phone" onkeyup="v_phone(this)"><br>
-            <small id="s_phone"></small><br>
-            <input id="submit" name="submit" type="submit" value="Book Ticket" disabled>
-        </form>
+        <div class="container"> 
+            <form id="myform" action="/html/confirm.html" method="get">
+                <div class="form">
+                    <h1>Enter Passenger Details</h1>
+                    <div class="content">
+                    <label>First Name: </label> <br>
+                    <input type="text" name="first_name" id="first_name" onkeyup="v_firstname(this,'1')">
+                    <small id="s_first_name1"></small><br>
+                    <label>Last Name: </label><br>
+                    <input type="text" name="last_name" id="last_name" onkeyup="v_lastname(this,'1')"><br>
+                    <small id="s_last_name1"></small><br>
+                    <label>Age: </label><br>
+                    <input type="number" name="age" id="age" onkeyup="v_age(this,'1')"><br>
+                    <small id="s_age1"></small><br>
+                    <label>Gender: </label><br>
+                    <input type="radio" name="gender" value="Male" checked>
+                    <label class="option">Male </label>
+                    <input type="radio" name="gender" value="Female">
+                    <label class="option">Female</label>
+                    <input type="radio" name="gender" value="Other">
+                    <label class="option">Other</label><br>
+                    <small id="s_gender"></small><br>
+                    <label>Email: </label><br>
+                    <input type="email" name="email" id="email" onkeyup="v_email(this,'1')"><br>
+                    <small id="s_email1"></small><br>
+                    <label>Phone Number: </label><br>
+                    <input type="tel" name="phone" id="phone" onkeyup="v_phone(this,'1')"><br>
+                    <small id="s_phone1"></small><br>
+                    <a href="#" onclick="addPassenger(this)">Add Second Passenger</a>
+                    <input id="submit1" name="submit1" type="submit" value="Book Ticket" disabled>
+                    </div>
+                </div>
+
+                <div class="form" id="myform2" >
+                    <h1>Enter 2nd Passenger Details</h1>
+                    <div class="content">
+                    <label>First Name: </label> <br>
+                    <input type="text" name="first_name2" id="first_name2" onkeyup="v_firstname(this,'2')">
+                    <small id="s_first_name2"></small><br>
+                    <label>Last Name: </label><br>
+                    <input type="text" name="last_name2" id="last_name2" onkeyup="v_lastname(this,'2')"><br>
+                    <small id="s_last_name2"></small><br>
+                    <label>Age: </label><br>
+                    <input type="number" name="age2" id="age2" onkeyup="v_age(this,'2')"><br>
+                    <small id="s_age2"></small><br>
+                    <label>Gender: </label><br>
+                    <input type="radio" name="gender2" value="Male" checked>
+                    <label class="option">Male </label>
+                    <input type="radio" name="gender2" value="Female">
+                    <label class="option">Female</label>
+                    <input type="radio" name="gender2" value="Other">
+                    <label class="option">Other</label><br>
+                    <small id="s_gender"></small><br>
+                    <label>Email: </label><br>
+                    <input type="email" name="email2" id="email2" onkeyup="v_email(this,'2')"><br>
+                    <small id="s_email2"></small><br>
+                    <label>Phone Number: </label><br>
+                    <input type="tel" name="phone2" id="phone2" onkeyup="v_phone(this,'2')"><br>
+                    <small id="s_phone2"></small><br>
+                    <input id="submit2" name="submit2" type="submit" value="Book Ticket" disabled>
+                    </div>
+                </div>
+            </form>
         </div>
     </body>
 </html>
