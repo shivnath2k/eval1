@@ -30,4 +30,7 @@ flight_details.then(response => response.json()).then(data=>{
     }
 });
 
-
+function goHome()
+{
+    window.location.href="/../main.html";
+}
