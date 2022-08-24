@@ -39,7 +39,15 @@ flight_details.then(response => response.json()).then(data=>{
             document.getElementById("dept_time").innerHTML=dtime.toUTCString();
             const atime=new Date(obj.ArrivalTime);
             document.getElementById("arrival_time").innerHTML=atime.toUTCString();
-            document.getElementById("price").innerHTML=obj["price"];
+            if(urlParams.get("submit2")!==null)
+            {
+                document.getElementById("price").innerHTML=obj["price"]*2;
+            }
+            else
+            {
+                document.getElementById("price").innerHTML=obj["price"];
+
+            }
             break;
         }
     }
