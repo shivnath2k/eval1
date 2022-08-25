@@ -1,5 +1,5 @@
 var name_regex = /^[a-z A-Z]+$/;
-var email_regex = /\S+@\S+\.com/;
+var email_regex = /\S+@\S+\.com$/;
 var num_of_passenger=1;
 
 const items={
@@ -161,10 +161,10 @@ function v_phone(elm,passengernum)
         msg.innerHTML="Phone Number cannot be Empty";
         return;
     }
-    if(elm.value.length>10)
+    if(elm.value.length!=10)
     {
         invalid(elm);
-        msg.innerHTML="Phone number cannot be more than 10 digits";
+        msg.innerHTML="Phone number should be 10 digits";
         return;
     }
     if(phone_regex.test(elm.value))
