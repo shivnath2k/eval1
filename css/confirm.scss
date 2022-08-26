@@ -39,7 +39,7 @@ div{
 
 .details{
     background-color: rgba(255, 255, 255, 0.808);
-    border: 10px solid rgba(255, 255, 0, 0.164);
+    // border: 10px solid rgba(255, 255, 0, 0.164);
     margin-top: 1%;
     margin-bottom: 1%;
     width: 40%;
@@ -81,7 +81,12 @@ input[type="button"]{
 }
 
 .passengers{
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.808);
+    border: 10px solid rgba(255, 255, 0, 0.164);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 4%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
 }
