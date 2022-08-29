@@ -31,7 +31,7 @@ header{
     }
 }
 .hero-img{
-    position: absolute;
+    // position: absolute;
     background: url(../images/plane2.webp);
     width: 100%;
     background-size: cover;
@@ -44,8 +44,8 @@ header{
 
 .flights{
     justify-content: center;
-    position: absolute;
-    padding-top: 25em;
+    // position: absolute;
+    // padding-top: 25em;
     display: flex;
     flex-wrap: wrap; 
 }
@@ -55,9 +55,9 @@ header{
 }
 
 .contents{
-    padding-top: 65em;
-    padding-left: 15em;
-    padding-right: 15em;
+    // padding-top: 65em;
+    // padding-left: 15em;
+    // padding-right: 15em;
     padding-bottom: 2em;
     
     
@@ -75,9 +75,6 @@ header{
             color: whitesmoke;
         }
     &:hover{
-        background-color: rgb(19, 107, 165);
-        border-radius: 25px;
-        
         h2{
             color: black;
         }

@@ -33,7 +33,6 @@ header ul li a:hover {
 }
 
 .hero-img {
-  position: absolute;
   background: url(../images/plane2.webp);
   width: 100%;
   background-size: cover;
@@ -45,8 +44,6 @@ header ul li a:hover {
 
 .flights {
   justify-content: center;
-  position: absolute;
-  padding-top: 25em;
   display: flex;
   flex-wrap: wrap;
 }
@@ -56,9 +53,6 @@ header ul li a:hover {
 }
 
 .contents {
-  padding-top: 65em;
-  padding-left: 15em;
-  padding-right: 15em;
   padding-bottom: 2em;
 }
 
@@ -74,10 +68,6 @@ header ul li a:hover {
 }
 .nav-content h2 {
   color: whitesmoke;
-}
-.nav-content:hover {
-  background-color: rgb(19, 107, 165);
-  border-radius: 25px;
 }
 .nav-content:hover h2 {
   color: black;
