@@ -44,6 +44,8 @@ header ul li a:hover {
 
 .flights {
   justify-content: center;
+  padding-top: 1.5em;
+  padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -53,6 +55,7 @@ header ul li a:hover {
 }
 
 .contents {
+  padding-top: 0;
   padding-bottom: 2em;
 }
 

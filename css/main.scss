@@ -31,7 +31,6 @@ header{
     }
 }
 .hero-img{
-    // position: absolute;
     background: url(../images/plane2.webp);
     width: 100%;
     background-size: cover;
@@ -44,8 +43,8 @@ header{
 
 .flights{
     justify-content: center;
-    // position: absolute;
-    // padding-top: 25em;
+    padding-top: 1.5em;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap; 
 }
@@ -55,12 +54,8 @@ header{
 }
 
 .contents{
-    // padding-top: 65em;
-    // padding-left: 15em;
-    // padding-right: 15em;
-    padding-bottom: 2em;
-    
-    
+    padding-top: 0;
+    padding-bottom: 2em;   
 }
 .nav-content{
     margin: 4em;
