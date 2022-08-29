@@ -17,7 +17,7 @@ header img {
 
 body {
   background-image: url(/images/plane2.webp);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position-x: 10%;
   background-position-y: 20%;
